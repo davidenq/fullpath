@@ -9,7 +9,7 @@
     "absolute path"
   ],
   "scripts": {
-    "test": "lab -t 100 -v -L"
+    "test": "lab -t 98.5 -v -L"
   },
   "engine": {
     "node": ">=0.10.*"
