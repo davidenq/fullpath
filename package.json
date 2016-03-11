@@ -1,37 +1,43 @@
 {
-  "name" : "directory-path",
-  "version" : "0.1.2",
-  "description" : "A simple node module for recursively reading directory and nested directories paths",
-  "keywords" : [ "directory", "paths" ],
-  "scripts" : {
-    "test" : "mocha test"
+  "name": "fullpath",
+  "version": "1.0.0",
+  "description": "A node module to get full path of a directory and your nested directories or the full path of each file at each nested directory.",
+  "keywords": [
+    "directories",
+    "files",
+    "paths",
+    "absolute path"
+  ],
+  "scripts": {
+    "test": "lab -t 100 -v -L"
   },
-  "engine" : {
-    "node" : ">=0.10.*"
+  "engine": {
+    "node": ">=0.10.*"
   },
-  "devDependencies" : {
-    "chai" : "1.10.0",
-    "mocha" : "2.1.0"
+  "devDependencies": {
+    "code": "^2.1.0",
+    "lab": "^10.2.0"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/davidenq/directory-path"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidenq/fullpath"
   },
-  "bugs" : {
-    "url" : "https://github.com/davidenq/directory-path/issues"
+  "bugs": {
+    "url": "https://github.com/davidenq/fullpath/issues"
   },
-  "author" : {
-    "name" : "David Núñez",
-    "email" : "davip@live.com",
-    "url" : "https://github.com/davidenq"
+  "author": {
+    "name": "David Núñez",
+    "email": "davip@live.com",
+    "url": "https://github.com/davidenq"
   },
-  "license" : {
-    "type" : "MIT"
+  "license": "MIT",
+  "maintainers": {
+    "name": "David Núñez",
+    "email": "davip@live.com"
   },
-  "maintainers" : {
-    "name" : "David Núñez",
-    "email" : "davip@live.com"
-  },
-  "main" : "index.js",
-  "readmeFilename": "README.md"
+  "main": "lib/index.js",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "hoek": "^3.0.4"
+  }
 }
