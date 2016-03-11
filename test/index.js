@@ -75,22 +75,6 @@ describe('Validated all options:', () => {
     });
 });
 
-describe('There are not files nested in the main folder', () => {
-
-    describe('Result', () => {
-
-        it('should be a null array', (done) => {
-
-            const fullPaths = new FullPath.Search({
-                'path': '/example/empty',
-                'dirname': __dirname
-            });
-            expect(fullPaths).to.be.an.array();
-            done();
-        });
-    });
-});
-
 describe('There are nested directories and nested files', () => {
 
     describe('Result',() => {
