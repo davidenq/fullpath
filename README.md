@@ -6,6 +6,8 @@
 A  node module to get full path of a directory and your nested directories or the full path of each file at each nested directory.
 
 [![Build Status](https://travis-ci.org/davidenq/fullpath.svg?branch=master)](https://travis-ci.org/davidenq/fullpath)
+[![NPM](https://img.shields.io/npm/v/fullpath.svg)](https://www.npmjs.com/package/fullpath)
+[![Downloads](https://www.npmjs.com/package/fullpath)](http://npm-stat.com/charts.html?package=fullpath)
 
 ### Installation
 
