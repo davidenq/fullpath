@@ -34,7 +34,7 @@ describe('Validated all options:', () => {
             done();
         });
 
-        it('throw error with message "The folder path should be specified." when you dont specified path', (done) => {
+        it('throw error with message "The folder path must be specified." when you dont specified path', (done) => {
 
             expect(() => {
 
@@ -44,11 +44,11 @@ describe('Validated all options:', () => {
                     'allFiles': true //optional
                 });
 
-            }).to.throw('The folder path should be specified.');
+            }).to.throw('The folder path must be specified.');
             done();
         });
 
-        it('throw error with message "The main directory name should be specified." when you dont specified dirname', (done) => {
+        it('throw error with message "The project root name must be specified." when you dont specified dirname', (done) => {
 
             expect(() => {
 
@@ -58,7 +58,37 @@ describe('Validated all options:', () => {
                     'allFiles': true //optional
                 });
 
-            }).to.throw('The main directory name should be specified.');
+            }).to.throw('The project root name must be specified.');
+            done();
+        });
+
+        it('throw error with message "You must specify a validated directory name." when you dont specified dirname name', (done) => {
+
+            expect(() => {
+
+                new FullPath.Search({
+                    'path': '',
+                    'dirname': __dirname,
+                    'type': 'both', //optional
+                    'allFiles': true //optional
+                });
+
+            }).to.throw('You must specify a validated directory name.');
+            done();
+        });
+
+        it('throw error with message "You must specify a validated project root name." when you dont specified path name', (done) => {
+
+            expect(() => {
+
+                new FullPath.Search({
+                    'path': '/example',
+                    'dirname': '',
+                    'type': 'both', //optional
+                    'allFiles': true //optional
+                });
+
+            }).to.throw('You must specify a validated project root name.');
             done();
         });
 
