@@ -156,7 +156,30 @@ gives the following output
 [ 'your_current_working_directory/example/nested/nested-a/a1/empty.md',
   'your_current_working_directory/example/nested/nested-b/b1/empty.md',
   'your_current_working_directory/example/nested/nested-b/b1/b11/empty.md',
-  'your_current_working_directory/example/nested/nested-a/a2/a21/a211/empty.md', ]
+  'your_current_working_directory/example/nested/nested-a/a2/a21/a211/empty.md' ]
+
+```
+
+### Example 5 - Exclude folders (also you can select with a extension or not)
+
+index.js
+```js
+ const fullPaths = new FullPath.Search({
+    'path': '/example',
+    'dirname': __dirname,
+    'ext': 'md', //it's not mandatory
+    'exc': ['nested-b', 'a1']
+});
+
+```
+Run the app:
+```
+node index.js
+```
+gives the following output
+```
+[ '/home/davidenq/Code/fullpath/test/example/nested/nested-a/empty.md',
+  '/home/davidenq/Code/fullpath/test/example/nested/nested-a/a2/a21/a211/empty.md' ]
 
 ```
 
@@ -218,7 +241,7 @@ A continuación se muestra un ejemplo sencillo de la ejecución del módulo.
 ├── index.js
 ```
 
-### Example 1 - Ruta completa de los directorios
+### Ejemplo 1 - Ruta completa de los directorios
 
 index.js
 ```js
@@ -231,7 +254,7 @@ const fullPaths = new FullPath.Search({
 });
 
 ```
-Run the app:
+Ejecutar la app:
 ```
 node index.js
 ```
@@ -251,7 +274,7 @@ El resultado es:
 
 ```
 
-### Example 2 - Ruta completa de archivos con cualquier extensión
+### Ejemplo 2 - Ruta completa de archivos con cualquier extensión
 
 index.js
 ```js
@@ -264,7 +287,7 @@ const fullPaths = new FullPath.Search({
 });
 
 ```
-Run the app:
+Ejecutar la app:
 ```
 node index.js
 ```
@@ -280,7 +303,7 @@ El resultado es:
 
 ```
 
-### Example 3 - Ruta completa de archivos únicamente con extensión .json y .js.
+### Ejemplo 3 - Ruta completa de archivos únicamente con extensión .json y .js.
 
 index.js
 ```js
@@ -293,7 +316,7 @@ const fullPaths = new FullPath.Search({
 });
 
 ```
-Run the app:
+Ejecutar la app:
 ```
 node index.js
 ```
@@ -305,6 +328,53 @@ El resultado es:
   'your_current_working_directory/example/nested/nested-b/b1/b11/empty.json',
   'your_current_working_directory/example/nested/nested-a/a2/a21/a211/empty.js',
   'your_current_working_directory/example/nested/nested-a/a2/a21/a211/example.js' ]
+
+```
+
+### Ejemplo 4 - Ruta completa de archivos con una extensión especificada
+
+index.js
+```js
+const fullPaths = new FullPath.Search({
+    'path': '/example',
+    'dirname': __dirname,
+    'ext': 'md'
+});
+
+```
+Ejecutar la app:
+```
+node index.js
+```
+gives the following output
+```
+[ 'your_current_working_directory/example/nested/nested-a/a1/empty.md',
+  'your_current_working_directory/example/nested/nested-b/b1/empty.md',
+  'your_current_working_directory/example/nested/nested-b/b1/b11/empty.md',
+  'your_current_working_directory/example/nested/nested-a/a2/a21/a211/empty.md' ]
+
+```
+
+### Ejemplo 5 - Excluir carpetas (también puedes elegir o no archivos con una extensión especifica)
+
+index.js
+```js
+ const fullPaths = new FullPath.Search({
+    'path': '/example',
+    'dirname': __dirname,
+    'ext': 'md', //it's not mandatory
+    'exc': ['nested-b', 'a1']
+});
+
+```
+Ejecutar la app:
+```
+node index.js
+```
+gives the following output
+```
+[ '/home/davidenq/Code/fullpath/test/example/nested/nested-a/empty.md',
+  '/home/davidenq/Code/fullpath/test/example/nested/nested-a/a2/a21/a211/empty.md' ]
 
 ```
 
