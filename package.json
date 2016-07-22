@@ -1,6 +1,6 @@
 {
   "name": "fullpath",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A node module to get full path of a directory and your nested directories or the full path of each file at each nested directory.",
   "keywords": [
     "directories",
