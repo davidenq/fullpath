@@ -248,5 +248,29 @@ describe('There are nested directories and nested files', () => {
 
             done();
         });
+
+        it('should contain only full paths of folders that does not were excluded', (done) => {
+
+            const result = false;
+
+            const fullPaths = new FullPath.Search({
+                'path': '/example',
+                'dirname': __dirname,
+                'ext': 'md',
+                'exc': ['nested-b', 'a1']
+            });
+
+            fullPaths.forEach( (paths) => {
+
+                if (!~paths.search('nested-b') || !~paths.search('a1')) {
+                    expect(!result).to.be.a.true();
+                }
+                else {
+                    expect(result).to.be.a.true();
+                }
+            });
+
+            done();
+        });
     });
 });
