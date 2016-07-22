@@ -136,6 +136,30 @@ gives the following output
 
 ```
 
+### Example 4 - Full path of files only with a specified extension
+
+index.js
+```js
+const fullPaths = new FullPath.Search({
+    'path': '/example',
+    'dirname': __dirname,
+    'ext': 'md'
+});
+
+```
+Run the app:
+```
+node index.js
+```
+gives the following output
+```
+[ 'your_current_working_directory/example/nested/nested-a/a1/empty.md',
+  'your_current_working_directory/example/nested/nested-b/b1/empty.md',
+  'your_current_working_directory/example/nested/nested-b/b1/b11/empty.md',
+  'your_current_working_directory/example/nested/nested-a/a2/a21/a211/empty.md', ]
+
+```
+
 ## Run test
 
 ```bash
