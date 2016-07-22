@@ -102,6 +102,23 @@ describe('Validated all options:', () => {
             expect(fullPaths).to.be.an.array();
             done();
         });
+
+        it('throw error with message "You must specify a string value." when you dont specified a string value in the ext key', (done) => {
+
+            expect(() => {
+
+                new FullPath.Search({
+                    'path': '/example',
+                    'dirname': __dirname,
+                    'type': 'files',
+                    'allFiles': false,
+                    'ext': []
+                });
+
+            }).to.throw('You must specify a string value.');
+
+            done();
+        });
     });
 });
 
@@ -197,6 +214,31 @@ describe('There are nested directories and nested files', () => {
             fullPaths.forEach( (paths) => {
 
                 if (~Path.basename(paths).indexOf('.json') || ~Path.basename(paths).indexOf('.js')) {
+                    expect(!result).to.be.a.true();
+                }
+                else {
+                    expect(result).to.be.a.true();
+                }
+            });
+
+            done();
+        });
+
+        it('should contain only full paths of files with extension that was selected in the configuration', (done) => {
+
+            const result = false;
+
+            const fullPaths = new FullPath.Search({
+                'path': '/example',
+                'dirname': __dirname,
+                'type': 'files',
+                'allFiles': false,
+                'ext': 'md'
+            });
+
+            fullPaths.forEach( (paths) => {
+
+                if (~Path.basename(paths).indexOf('.md')) {
                     expect(!result).to.be.a.true();
                 }
                 else {
