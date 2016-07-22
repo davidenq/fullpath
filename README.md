@@ -5,6 +5,10 @@
 
 A  node module to get full path of a directory and your nested directories or the full path of each file at each nested directory.
 
+### release notes:
+
+- fullpath now has support to exclude folders or select only files with a extension that you specified.. Please see examples 4 and 5 for more information about that how to use the new features.
+
 [![Build Status](https://travis-ci.org/davidenq/fullpath.svg?branch=master)](https://travis-ci.org/davidenq/fullpath)
 [![NPM](https://img.shields.io/npm/v/fullpath.svg)](https://www.npmjs.com/package/fullpath)
 [![Downloads](https://img.shields.io/npm/dm/fullpath.svg)](http://npm-stat.com/charts.html?package=fullpath)
@@ -205,7 +209,9 @@ MIT Licence
 
 Un módulo para node.js que obtiene la ruta de acceso completa de una carpeta y sus carpetas anidadas o la ruta completa de todos los archivos contenidos en cada carpeta anidada.
 
+### notas de la versión:
 
+- el módulo fullpath ahora soporta dos nuevas caraceterísticas: excluir carpetas y seleccionar archivos con una extensión especificada. Por favor, ver los ejemplos 4 y 5 para mayor información acerca de como usar estas nuevas características.
 
 ###Instalación
 
