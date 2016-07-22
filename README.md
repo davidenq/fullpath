@@ -9,7 +9,7 @@ A  node module to get full path of a directory and your nested directories or th
 [![NPM](https://img.shields.io/npm/v/fullpath.svg)](https://www.npmjs.com/package/fullpath)
 [![Downloads](https://img.shields.io/npm/dm/fullpath.svg)](http://npm-stat.com/charts.html?package=fullpath)
 
-**_Coverage 98.67%_**
+**_Coverage 98.89%_**
 
 ### Installation
 
