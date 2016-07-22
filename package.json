@@ -15,8 +15,8 @@
     "node": ">=0.10.*"
   },
   "devDependencies": {
-    "code": "^2.1.0",
-    "lab": "^10.2.0"
+    "code": "^3.0.*",
+    "lab": "^10.9.0"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,6 @@
   "main": "lib/index.js",
   "readmeFilename": "README.md",
   "dependencies": {
-    "hoek": "^3.0.4"
+    "hoek": "^4.*.*"
   }
 }
