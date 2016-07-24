@@ -7,13 +7,13 @@ A  node module to get full path of a directory and your nested directories or th
 
 ### release notes:
 
-- fullpath now has support to exclude folders or select only files with a extension that you specified.. Please see examples 4 and 5 for more information about that how to use the new features.
+- fullpath now has support to exclude folders and select only files with a extension that you specified. Please see examples 4 and 5 for more information about that how to use the new features.
 
 [![Build Status](https://travis-ci.org/davidenq/fullpath.svg?branch=master)](https://travis-ci.org/davidenq/fullpath)
 [![NPM](https://img.shields.io/npm/v/fullpath.svg)](https://www.npmjs.com/package/fullpath)
 [![Downloads](https://img.shields.io/npm/dm/fullpath.svg)](http://npm-stat.com/charts.html?package=fullpath)
 
-**_Coverage 98.89%_**
+**_Coverage 99.02%_**
 
 ### Installation
 
