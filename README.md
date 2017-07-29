@@ -3,11 +3,11 @@
 
 ## fullpath
 
-A  node module to get full path of a directory and your nested directories or the full path of each file at each nested directory.
+A  node module to get full path of a directory and its nested directories or the full path of each file into each nested directory.
 
 ### release notes:
 
-- fullpath now has support to exclude folders and select only files with a extension that you specified. Please see examples 4 and 5 for more information about that how to use the new features.
+- fullpath now has support to exclude folders and select only files with a extension that you've specified. Please see examples 4 and 5 for more information about that how to use this new features.
 
 [![Build Status](https://travis-ci.org/davidenq/fullpath.svg?branch=master)](https://travis-ci.org/davidenq/fullpath)
 [![NPM](https://img.shields.io/npm/v/fullpath.svg)](https://www.npmjs.com/package/fullpath)
@@ -22,7 +22,7 @@ $ [sudo] npm install fullpath --save
 ```
 ### How to use
 
-The following example attaches fullpath to a simple  node.js app
+The following example attaches fullpath to a simple node.js app
 
 **_Directory structure:_**
 
@@ -255,7 +255,7 @@ const fullPaths = new FullPath.Search({
     'path': '/example',
     'dirname': __dirname,
     'type': 'files',   //opcional. Si no especifica este valor, por defecto el valor será seteado con 'files'
-    'allFiles': false //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de 
+    'allFiles': false //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de
                       // archivos con extensión .json y .js
 });
 
@@ -288,7 +288,7 @@ const fullPaths = new FullPath.Search({
     'path': '/example',
     'dirname': __dirname,
     'type': 'files',   //opcional. Si no especifica este valor, por defecto el valor será seteado con 'files'
-    'allFiles': true //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de 
+    'allFiles': true //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de
                       // archivos con extensión .json y .js
 });
 
@@ -317,7 +317,7 @@ const fullPaths = new FullPath.Search({
     'path': '/example',
     'dirname': __dirname,
     'type': 'files',   //opcional. Si no especifica este valor, por defecto el valor será seteado con 'files'
-    'allFiles': false //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de 
+    'allFiles': false //optional. Si no especifica este valor, por defecto dicho valor será seteado con false y obtendrá el resultado las rutas complestas únicamente de
                       // archivos con extensión .json y .js
 });
 
